@@ -70,10 +70,9 @@ function handleSubmit(event) {
     const authorInput=document.querySelector("#author").value;
     const numInput=document.querySelector("#pageNum").value;
     const readInput=document.querySelector("#haveRead").checked;
-    console.log(readInput)
+
     bookList.push(new Book(titleInput,authorInput,numInput,readInput,bookList.length))
-    console.log("boohoo")
-    console.log(bookList)
+
     modal.close();
     displayBooks()
 }
@@ -100,4 +99,3 @@ closeModal.addEventListener(("click"), () =>
     modal.close();
 })
 
-//const btn= document.querySelector();
